@@ -1,0 +1,39 @@
+<!DOCTYPE html>    
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css" />
+        </head>
+
+        <body style="background-color:rgb(49, 218, 49)">
+            <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact Us</a>
+            </div>
+            
+            <nav>
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen" style="margin-left: 1%; margin-top: 1%">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UChT1Lwz71t4ZU9hpXWA4WFA" onclick="window.open(this.href); return false;"><img style="margin-left: 90%;" class="reseaux" width="50" height="50" src="Images/logo-youtube.png" alt="Logo youtube"></a>
+            </nav>
+
+            <script>
+                function openNav() {
+                    document.getElementById("sideNavigation").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+                 
+                function closeNav() {
+                    document.getElementById("sideNavigation").style.width = "0";
+                    document.getElementById("main").style.marginLeft = "0";
+                }
+            </script>
+        </body>
+    </html>
